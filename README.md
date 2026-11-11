@@ -15,7 +15,7 @@ Saya percaya kode yang baik itu seperti tulisan dan desain yang baik: jelas, rin
 Yogyakarta, Indonesia
 
 **Latar belakang**<br/>
-S1 Teknologi Informasi — Universitas Negeri Yogyakarta (UNY)
+S1 Teknologi Informasi - Universitas Negeri Yogyakarta (UNY)
 
 </td>
 <td width="50%" valign="top">
