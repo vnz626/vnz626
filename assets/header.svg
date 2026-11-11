@@ -1,69 +1,74 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 230" width="850" height="230" fill="none">
   <defs>
-    <!-- Deep monochrome base -->
-    <linearGradient id="bg-base" x1="0" y1="0" x2="850" y2="230" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#050506"/>
-      <stop offset="50%" stop-color="#0A0A0C"/>
-      <stop offset="100%" stop-color="#040405"/>
-    </linearGradient>
-
-    <!-- Soft moving monochrome light sources behind the fluted glass -->
-    <radialGradient id="light-1" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.52"/>
-      <stop offset="45%" stop-color="#D4D4D8" stop-opacity="0.22"/>
+    <!-- Soft moving monochrome light waves behind the fluted glass -->
+    <radialGradient id="beam-1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#D4D4D8" stop-opacity="0.58"/>
+      <stop offset="72%" stop-color="#52525B" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="light-2" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#F4F4F5" stop-opacity="0.44"/>
-      <stop offset="50%" stop-color="#A1A1AA" stop-opacity="0.16"/>
+    <radialGradient id="beam-2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FAFAFA" stop-opacity="0.88"/>
+      <stop offset="42%" stop-color="#A1A1AA" stop-opacity="0.45"/>
+      <stop offset="75%" stop-color="#3F3F46" stop-opacity="0.14"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="light-3" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#E4E4E7" stop-opacity="0.34"/>
-      <stop offset="55%" stop-color="#71717A" stop-opacity="0.12"/>
+    <radialGradient id="beam-3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#E4E4E7" stop-opacity="0.72"/>
+      <stop offset="50%" stop-color="#71717A" stop-opacity="0.28"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Fluted / ribbed vertical glass gradient per rib -->
-    <linearGradient id="flute-rib" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#000000" stop-opacity="0.72"/>
-      <stop offset="16%" stop-color="#18181B" stop-opacity="0.35"/>
-      <stop offset="38%" stop-color="#FFFFFF" stop-opacity="0.14"/>
-      <stop offset="52%" stop-color="#FFFFFF" stop-opacity="0.22"/>
-      <stop offset="68%" stop-color="#27272A" stop-opacity="0.25"/>
-      <stop offset="88%" stop-color="#000000" stop-opacity="0.68"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0.82"/>
+    <!-- Fluted glass rib profile (multiplied over the light beams) -->
+    <linearGradient id="rib-multiply" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#080809"/>
+      <stop offset="14%" stop-color="#3F3F46"/>
+      <stop offset="34%" stop-color="#D4D4D8"/>
+      <stop offset="46%" stop-color="#FFFFFF"/>
+      <stop offset="62%" stop-color="#A1A1AA"/>
+      <stop offset="84%" stop-color="#27272A"/>
+      <stop offset="100%" stop-color="#060607"/>
     </linearGradient>
 
-    <!-- Subtle inner highlight & border -->
-    <linearGradient id="glass-border" x1="0" y1="0" x2="850" y2="230" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.26"/>
-      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.18"/>
+    <!-- Faint rib reflection visible even in dark areas -->
+    <linearGradient id="rib-sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.5"/>
+      <stop offset="38%" stop-color="#FFFFFF" stop-opacity="0.09"/>
+      <stop offset="48%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="70%" stop-color="#000000" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.65"/>
     </linearGradient>
 
-    <!-- Left readability scrim so text stays sharp over moving light -->
-    <linearGradient id="text-scrim" x1="0" y1="0" x2="620" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#050507" stop-opacity="0.72"/>
-      <stop offset="65%" stop-color="#050507" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#050507" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Vertical fluted glass pattern -->
-    <pattern id="fluted-glass" width="18" height="230" patternUnits="userSpaceOnUse">
-      <rect x="0" y="0" width="18" height="230" fill="url(#flute-rib)"/>
-      <line x1="0.5" y1="0" x2="0.5" y2="230" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
-      <line x1="17.5" y1="0" x2="17.5" y2="230" stroke="#000000" stroke-opacity="0.55" stroke-width="1"/>
+    <pattern id="flutes-multiply" width="14" height="230" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="14" height="230" fill="url(#rib-multiply)"/>
     </pattern>
 
-    <!-- Fine film grain filter -->
+    <pattern id="flutes-sheen" width="14" height="230" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="14" height="230" fill="url(#rib-sheen)"/>
+    </pattern>
+
+    <!-- Frosted glass grain filter -->
     <filter id="grain" x="0%" y="0%" width="100%" height="100%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" seed="7" stitchTiles="stitch" result="noise"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.88" numOctaves="3" seed="11" stitchTiles="stitch" result="noise"/>
       <feColorMatrix type="saturate" values="0" in="noise" result="mono"/>
-      <feComponentTransfer in="mono" result="softNoise">
-        <feFuncA type="linear" slope="0.24"/>
+      <feComponentTransfer in="mono">
+        <feFuncR type="linear" slope="1.7" intercept="-0.35"/>
+        <feFuncG type="linear" slope="1.7" intercept="-0.35"/>
+        <feFuncB type="linear" slope="1.7" intercept="-0.35"/>
+        <feFuncA type="linear" slope="0.46"/>
       </feComponentTransfer>
     </filter>
+
+    <!-- Crisp readability shadow for foreground text -->
+    <filter id="text-shadow" x="-10%" y="-20%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+
+    <linearGradient id="glass-border" x1="0" y1="0" x2="850" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.22"/>
+    </linearGradient>
 
     <clipPath id="card-clip">
       <rect width="850" height="230" rx="16"/>
@@ -72,103 +77,108 @@
 
   <style>
     /*FONTS*/
-    @keyframes driftA {
+    @keyframes loopWaveA {
+      0%   { transform: translate(-60px, 20px) scale(1); }
+      50%  { transform: translate(220px, -45px) scale(1.12); }
+      100% { transform: translate(-60px, 20px) scale(1); }
+    }
+    @keyframes loopWaveB {
+      0%   { transform: translate(80px, -20px) scale(1); }
+      50%  { transform: translate(-210px, 40px) scale(1.14); }
+      100% { transform: translate(80px, -20px) scale(1); }
+    }
+    @keyframes loopWaveC {
       0%   { transform: translate(0px, 0px) scale(1); }
-      50%  { transform: translate(150px, -42px) scale(1.12); }
+      50%  { transform: translate(130px, 55px) scale(0.92); }
       100% { transform: translate(0px, 0px) scale(1); }
     }
-    @keyframes driftB {
-      0%   { transform: translate(0px, 0px) scale(1); }
-      50%  { transform: translate(-170px, 48px) scale(1.15); }
-      100% { transform: translate(0px, 0px) scale(1); }
+    .wave-a {
+      animation: loopWaveA 10s ease-in-out infinite;
     }
-    @keyframes driftC {
-      0%   { transform: translate(0px, 0px) scale(1); }
-      50%  { transform: translate(90px, 55px) scale(0.92); }
-      100% { transform: translate(0px, 0px) scale(1); }
+    .wave-b {
+      animation: loopWaveB 13s ease-in-out infinite;
     }
-    .blob-a {
-      transform-origin: 240px 175px;
-      animation: driftA 11s ease-in-out infinite;
+    .wave-c {
+      animation: loopWaveC 16s ease-in-out infinite;
     }
-    .blob-b {
-      transform-origin: 650px 80px;
-      animation: driftB 14s ease-in-out infinite;
+    .flute-layer {
+      mix-blend-mode: multiply;
     }
-    .blob-c {
-      transform-origin: 480px 150px;
-      animation: driftC 17s ease-in-out infinite;
+    .grain-layer {
+      mix-blend-mode: overlay;
     }
     .eyebrow {
       font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
       font-weight: 600;
       font-size: 12px;
-      letter-spacing: 2px;
-      fill: #A1A1AA;
+      letter-spacing: 2.2px;
+      fill: #D4D4D8;
     }
     .title {
       font-family: 'Montserrat', 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
       font-weight: 800;
       font-size: 42px;
       letter-spacing: -0.6px;
-      fill: #FAFAFA;
+      fill: #FFFFFF;
     }
     .subtitle {
       font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
       font-weight: 500;
       font-size: 16px;
-      fill: #D4D4D8;
+      fill: #E4E4E7;
     }
     .tag {
       font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
       font-weight: 600;
       font-size: 12px;
-      fill: #E4E4E7;
+      fill: #F4F4F5;
     }
   </style>
 
   <g clip-path="url(#card-clip)">
-    <!-- Base dark background -->
-    <rect width="850" height="230" fill="url(#bg-base)"/>
+    <!-- Pitch-dark base -->
+    <rect width="850" height="230" fill="#030304"/>
 
-    <!-- Looping light beams behind fluted glass -->
-    <g class="blob-a">
-      <ellipse cx="240" cy="175" rx="280" ry="150" transform="rotate(-18 240 175)" fill="url(#light-1)"/>
+    <!-- Looping diagonal monochrome light waves -->
+    <g class="wave-a">
+      <ellipse cx="210" cy="185" rx="280" ry="135" transform="rotate(-24 210 185)" fill="url(#beam-1)"/>
     </g>
-    <g class="blob-b">
-      <ellipse cx="650" cy="80" rx="260" ry="135" transform="rotate(-22 650 80)" fill="url(#light-2)"/>
+    <g class="wave-b">
+      <ellipse cx="560" cy="115" rx="300" ry="125" transform="rotate(-22 560 115)" fill="url(#beam-2)"/>
     </g>
-    <g class="blob-c">
-      <ellipse cx="480" cy="150" rx="220" ry="120" transform="rotate(-14 480 150)" fill="url(#light-3)"/>
+    <g class="wave-c">
+      <ellipse cx="380" cy="40" rx="240" ry="110" transform="rotate(-18 380 40)" fill="url(#beam-3)"/>
     </g>
 
-    <!-- Fluted / ribbed glass overlay -->
-    <rect width="850" height="230" fill="url(#fluted-glass)"/>
+    <!-- Fluted glass optical refraction (multiplies light beams into vertical ribs) -->
+    <rect width="850" height="230" fill="url(#flutes-multiply)" class="flute-layer"/>
 
-    <!-- Subtle grain overlay -->
-    <rect width="850" height="230" filter="url(#grain)" opacity="0.55"/>
+    <!-- Subtle vertical rib highlights in dark areas -->
+    <rect width="850" height="230" fill="url(#flutes-sheen)"/>
 
-    <!-- Readability scrim behind text -->
-    <rect width="620" height="230" fill="url(#text-scrim)"/>
+    <!-- Fine monochrome grain texture -->
+    <rect width="850" height="230" filter="url(#grain)" class="grain-layer"/>
 
-    <!-- Content -->
-    <rect x="44" y="38" width="28" height="2" rx="1" fill="#A1A1AA"/>
-    <text x="82" y="43" class="eyebrow">VNZ626 · YOGYAKARTA</text>
+    <!-- Foreground content with subtle shadow for legibility -->
+    <g filter="url(#text-shadow)">
+      <rect x="44" y="38" width="28" height="2" rx="1" fill="#D4D4D8"/>
+      <text x="82" y="43" class="eyebrow">VNZ626 · YOGYAKARTA</text>
 
-    <text x="44" y="108" class="title">Kevin Beding</text>
-    <text x="44" y="140" class="subtitle">S1 Teknologi Informasi UNY · UI/UX &amp; Fullstack Learner</text>
+      <text x="44" y="108" class="title">Kevin Beding</text>
+      <text x="44" y="140" class="subtitle">S1 Teknologi Informasi UNY · UI/UX &amp; Fullstack Learner</text>
+    </g>
 
     <!-- Frosted glass pills -->
-    <rect x="44" y="166" width="110" height="28" rx="14" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <rect x="44" y="166" width="110" height="28" rx="14" fill="#09090B" fill-opacity="0.52" stroke="#FFFFFF" stroke-opacity="0.24"/>
     <text x="99" y="184" text-anchor="middle" class="tag">UI/UX Design</text>
 
-    <rect x="164" y="166" width="116" height="28" rx="14" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <rect x="164" y="166" width="116" height="28" rx="14" fill="#09090B" fill-opacity="0.52" stroke="#FFFFFF" stroke-opacity="0.24"/>
     <text x="222" y="184" text-anchor="middle" class="tag">Fullstack Dev</text>
 
-    <rect x="290" y="166" width="112" height="28" rx="14" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <rect x="290" y="166" width="112" height="28" rx="14" fill="#09090B" fill-opacity="0.52" stroke="#FFFFFF" stroke-opacity="0.24"/>
     <text x="346" y="184" text-anchor="middle" class="tag">S1 TI · UNY</text>
   </g>
 
-  <!-- Crisp glass edge border -->
+  <!-- Crisp glass rim border -->
   <rect x="0.75" y="0.75" width="848.5" height="228.5" rx="15.25" stroke="url(#glass-border)" stroke-width="1.5"/>
 </svg>

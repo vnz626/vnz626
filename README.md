@@ -1,4 +1,4 @@
-<img src="assets/header.svg" alt="Header profil" width="100%"/>
+<img src="assets/header.svg?v=2" alt="Header profil" width="100%"/>
 
 <br/>
 
