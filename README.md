@@ -1,16 +1,100 @@
-## Hi there 👋
+<img src="assets/header.svg" alt="Header profil" width="100%"/>
 
-<!--
-**vnz626/vnz626** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<br/>
 
-Here are some ideas to get you started:
+<img src="assets/h-about.svg" alt="Tentang Saya" width="100%"/>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Halo! Saya **Kevin Beding**, mahasiswa S1 Teknologi Informasi di Universitas Negeri Yogyakarta (UNY) yang suka memadukan **UI/UX** dan **pengembangan fullstack** untuk membangun produk yang berguna, rapi, dan enak dipakai.
+Saya percaya kode yang baik itu seperti tulisan dan desain yang baik: jelas, ringkas, dan mudah dipahami orang lain.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**📍 Berbasis di**<br/>
+Yogyakarta, Indonesia
+
+**🎓 Latar belakang**<br/>
+S1 Teknologi Informasi — Universitas Negeri Yogyakarta (UNY)
+
+</td>
+<td width="50%" valign="top">
+
+**🌱 Lagi belajar**<br/>
+Fullstack Web Development
+
+**💬 Tanya saya soal**<br/>
+UI/UX Design &amp; Web Development
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<img src="assets/h-now.svg" alt="Sedang Dikerjakan" width="100%"/>
+
+- 🔭 **Proyek utama:** mengembangkan proyek web fullstack sembari mengasah UI/UX
+- 🧪 **Eksperimen:** membangun alur desain dari Figma ke aplikasi fullstack yang siap pakai
+- 🤝 **Terbuka untuk:** kolaborasi open source, magang, atau proyek freelance
+
+<br/>
+
+<img src="assets/h-stack.svg" alt="Tech Stack" width="100%"/>
+
+| | |
+|---|---|
+| **Bahasa** | HTML · CSS · JavaScript · TypeScript · Python · PHP |
+| **Frontend** | React · Next.js · Tailwind CSS |
+| **Backend** | Node.js · Express · Laravel |
+| **Database** | PostgreSQL · MySQL · MongoDB |
+| **UI/UX &amp; Tools** | Figma · Git · VS Code · Docker · Postman |
+
+<br/>
+
+<img src="assets/h-projects.svg" alt="Proyek Pilihan" width="100%"/>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Nama Proyek 1](https://github.com/vnz626/repo-1)
+Satu kalimat tentang apa yang proyek ini selesaikan.<br/>
+`React` `Node.js`
+
+</td>
+<td width="50%" valign="top">
+
+### [Nama Proyek 2](https://github.com/vnz626/repo-2)
+Satu kalimat tentang apa yang proyek ini selesaikan.<br/>
+`Python` `FastAPI`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Nama Proyek 3](https://github.com/vnz626/repo-3)
+Satu kalimat tentang apa yang proyek ini selesaikan.<br/>
+`Laravel` `MySQL`
+
+</td>
+<td width="50%" valign="top">
+
+### [Nama Proyek 4](https://github.com/vnz626/repo-4)
+Satu kalimat tentang apa yang proyek ini selesaikan.<br/>
+`Next.js` `Tailwind`
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<img src="assets/h-contact.svg" alt="Mari Terhubung" width="100%"/>
+
+**[Email](mailto:email@kamu.com)** &nbsp;·&nbsp; **[LinkedIn](https://linkedin.com/in/USERNAME)** &nbsp;·&nbsp; **[Instagram](https://instagram.com/USERNAME)** &nbsp;·&nbsp; **[Portofolio](https://websitekamu.com)**
+
+<br/>
+
+<img src="assets/footer.svg" alt="Footer" width="100%"/>
