@@ -32,14 +32,6 @@ UI/UX Design &amp; Web Development
 
 <br/>
 
-<img src="assets/h-now.svg" alt="Sedang Dikerjakan" width="100%"/>
-
-- 🔭 **Proyek utama:** mengembangkan proyek web fullstack sembari mengasah UI/UX
-- 🧪 **Eksperimen:** membangun alur desain dari Figma ke aplikasi fullstack yang siap pakai
-- 🤝 **Terbuka untuk:** kolaborasi open source, magang, atau proyek freelance
-
-<br/>
-
 <img src="assets/h-stack.svg" alt="Tech Stack" width="100%"/>
 
 | | |
@@ -49,51 +41,6 @@ UI/UX Design &amp; Web Development
 | **Backend** | Node.js · Express · Laravel |
 | **Database** | PostgreSQL · MySQL · MongoDB |
 | **UI/UX &amp; Tools** | Figma · Git · VS Code · Docker · Postman |
-
-<br/>
-
-<img src="assets/h-projects.svg" alt="Proyek Pilihan" width="100%"/>
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### [Nama Proyek 1](https://github.com/vnz626/repo-1)
-Satu kalimat tentang apa yang proyek ini selesaikan.<br/>
-`React` `Node.js`
-
-</td>
-<td width="50%" valign="top">
-
-### [Nama Proyek 2](https://github.com/vnz626/repo-2)
-Satu kalimat tentang apa yang proyek ini selesaikan.<br/>
-`Python` `FastAPI`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [Nama Proyek 3](https://github.com/vnz626/repo-3)
-Satu kalimat tentang apa yang proyek ini selesaikan.<br/>
-`Laravel` `MySQL`
-
-</td>
-<td width="50%" valign="top">
-
-### [Nama Proyek 4](https://github.com/vnz626/repo-4)
-Satu kalimat tentang apa yang proyek ini selesaikan.<br/>
-`Next.js` `Tailwind`
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<img src="assets/h-contact.svg" alt="Mari Terhubung" width="100%"/>
-
-**[Email](mailto:email@kamu.com)** &nbsp;·&nbsp; **[LinkedIn](https://linkedin.com/in/USERNAME)** &nbsp;·&nbsp; **[Instagram](https://instagram.com/USERNAME)** &nbsp;·&nbsp; **[Portofolio](https://websitekamu.com)**
 
 <br/>
 
