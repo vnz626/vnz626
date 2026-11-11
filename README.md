@@ -11,19 +11,19 @@ Saya percaya kode yang baik itu seperti tulisan dan desain yang baik: jelas, rin
 <tr>
 <td width="50%" valign="top">
 
-**📍 Berbasis di**<br/>
+**Berbasis di**<br/>
 Yogyakarta, Indonesia
 
-**🎓 Latar belakang**<br/>
+**Latar belakang**<br/>
 S1 Teknologi Informasi — Universitas Negeri Yogyakarta (UNY)
 
 </td>
 <td width="50%" valign="top">
 
-**🌱 Lagi belajar**<br/>
+**Lagi belajar**<br/>
 Fullstack Web Development
 
-**💬 Tanya saya soal**<br/>
+**Tanya saya soal**<br/>
 UI/UX Design &amp; Web Development
 
 </td>
